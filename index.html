@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Index.css">
+
+   
+</head>
+<body>
+    
+    <div class="container">
+        <h1> Terminal Informativo Acadêmico </h1>
+    </div>
+    <br>
+    <div>
+        <a> Imagem </a>
+    </div>
+     <div>
+    <form id="Myform" name="myForm" onsubmit="return validateForm()" method="post" action="/">
+   
+        <p>Matricula</p>
+        <input type="number" id="tia" required>
+        <p>Senha</p>
+        <input type="text" required>
+        <br>
+        <label for="cars">Selecione a unidade:</label>
+        <br>
+        <br>
+        <select id="cars">
+        <option value="Higienopolis" >Higienopolis</option>
+        <option value="Alphaville">Alphaville</option>
+        <option value="Campinas">Campinas</option>  
+        <option value="EAD">EAD</option> 
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Entrar" onclick="validateForm()">
+        </form>
+    </div>
+    
+</body>
+<script>
+ function validateForm() {
+  var x = document.getElementById("tia").value
+  var tamanho =8
+  if (tamanho != x.length ) {
+    alert("Name must be filled out");
+    
+  }
+}
+</script>
+
+</html>
